@@ -5,10 +5,15 @@
 export const COMMON_GLSL = /* glsl */ `
 #ifndef TW_COMMON
 #define TW_COMMON
-#define PI 3.14159265359
-#define TAU 6.28318530718
-float saturate(float x) { return clamp(x, 0.0, 1.0); }
-vec3 saturate(vec3 x) { return clamp(x, 0.0, 1.0); }
+#ifndef PI
+#define PI 3.141592653589793
+#endif
+#ifndef TAU
+#define TAU 6.283185307179586
+#endif
+#ifndef saturate
+#define saturate(a) clamp(a, 0.0, 1.0)
+#endif
 float sq(float x) { return x * x; }
 float luma(vec3 c) { return dot(c, vec3(0.2126, 0.7152, 0.0722)); }
 float remap(float x, float a, float b, float c, float d) { return c + (x - a) * (d - c) / (b - a); }
