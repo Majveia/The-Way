@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>The Way</title>
+    <meta name="description" content="The Way — a playable simulated universe: cosmic web, galaxies, black holes, star systems and living worlds." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+    <style>html,body{background:#000;margin:0;height:100%;overflow:hidden}</style>
+  </head>
+  <body>
+    <canvas id="view" tabindex="0"></canvas>
+    <div id="hud"></div>
+    <div id="gate">
+      <div>
+        <div class="ring"><div class="dot"></div></div>
+        <div class="wordmark">THE WAY</div>
+        <div class="begin">touch to begin</div>
+        <div class="opts"><span data-skip="1">skip intro</span></div>
+      </div>
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
